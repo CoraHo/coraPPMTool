@@ -21,16 +21,16 @@ class AddProject extends Component {
     }
     onSubmit(e) {
         e.preventDefault();
-        const newProject = {
-          projectName: this.state.projectName,
-          projectIdentifier: this.state.projectIdentifier,
-          description: this.state.description,
-          start_date: this.state.start_date,
-          end_date: this.state.end_date
+        const newProject={
+            projectName: this.state.projectName,
+            projectIdentifier: this.state.projectIdentifier,
+            description: this.state.description,
+            start_date: this.state.start_date,
+            end_date: this.state.end_date
         };
-    
+        
         console.log(newProject);
-      }
+    }
 
   render() {
     return (
@@ -51,7 +51,7 @@ class AddProject extends Component {
                     <div className="col-md-8 m-auto">
                         <h5 className="display-4 text-center">Create / Edit Project form</h5>
                         <hr />
-                        <form onSubmit={onSubmit}>
+                        <form onSubmit={this.onSubmit}>
 
                             <div className="form-group">
                                 <input 
