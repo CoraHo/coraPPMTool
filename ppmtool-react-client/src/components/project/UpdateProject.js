@@ -8,7 +8,7 @@ class UpdateProject extends Component {
   //set state
   constructor() {
     super();
-
+    
     this.state = {
       id: "",
       projectName: "",
@@ -148,7 +148,5 @@ const mapStateToProps = state => ({
   project: state.project.project
 });
 
-export default connect(
-  mapStateToProps,
-  { getProject, createProject }
+export default connect( mapStateToProps, { getProject, createProject }
 )(UpdateProject);
