@@ -1,5 +1,6 @@
 package io.coraho.ppmtool.web;
 
+import io.coraho.ppmtool.domain.Project;
 import io.coraho.ppmtool.domain.ProjectTask;
 import io.coraho.ppmtool.services.ErrorMapValidationService;
 import io.coraho.ppmtool.services.ProjectTaskService;
@@ -11,6 +12,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/api/backlog")
@@ -34,6 +36,12 @@ public class BacklogController {
         ProjectTask projectTask1 = projectTaskService.addProjectTask(backlog_id, projectTask);
 
         return new ResponseEntity<ProjectTask>(projectTask1, HttpStatus.CREATED);
+    }
+
+    @GetMapping("/{backlog_id}")
+    public ResponseEntity<?> getProjectBacklog(@PathVariable String backlog_id) {
+        Iterable<ProjectTask> tasks = projectTaskService.findBacklogById(backlog_id);
+        return new ResponseEntity<>(tasks, HttpStatus.OK);
     }
 }
 
