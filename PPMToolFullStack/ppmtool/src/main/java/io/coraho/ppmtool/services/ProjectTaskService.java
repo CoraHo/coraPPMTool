@@ -10,6 +10,8 @@ import io.coraho.ppmtool.repositories.ProjectTaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProjectTaskService {
 
@@ -85,9 +87,20 @@ public class ProjectTaskService {
 
 
     public ProjectTask updateByProjectSequence(ProjectTask updateProject, String backlog_id, String ptSequence) {
-        ProjectTask projectTask = projectTaskRepository.findByProjectSequence(ptSequence);
+        ProjectTask projectTask = findProjectTaskByProjectSequence(backlog_id, ptSequence);
         projectTask = updateProject;
         return projectTaskRepository.save(projectTask);
+    }
+
+    public void deleteTaskByProjectSequence(String backlog_id, String ptSequence) {
+        ProjectTask taskToDelete = findProjectTaskByProjectSequence(backlog_id, ptSequence);
+
+        Backlog backlog = taskToDelete.getBacklog();
+        List<ProjectTask> pts = backlog.getProjectTasks();
+        pts.remove(taskToDelete);
+        backlogRepository.save(backlog);
+
+        projectTaskRepository.delete(taskToDelete);
     }
 }
 

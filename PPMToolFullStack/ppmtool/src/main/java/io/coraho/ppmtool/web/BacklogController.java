@@ -12,6 +12,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import javax.xml.ws.Response;
 import java.util.List;
 
 @Controller
@@ -61,6 +62,13 @@ public class BacklogController {
         ProjectTask updatedTask = projectTaskService.updateByProjectSequence(updateProject, backlog_id, ptSequence);
 
         return new ResponseEntity<>(updatedTask, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/{backlog_id}/{ptSequence}")
+    public ResponseEntity<?> deleteTaskByProjectSequence(@PathVariable String backlog_id, @PathVariable String ptSequence) {
+        projectTaskService.deleteTaskByProjectSequence(backlog_id, ptSequence);
+
+        return new ResponseEntity<String>("Project task with sequence '" + ptSequence + "' was deleted", HttpStatus.OK);
     }
 }
 
