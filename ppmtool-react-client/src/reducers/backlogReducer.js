@@ -21,7 +21,7 @@ export default function(state = initialState, action) {
 
         case GET_PROJECT_TASK:
             return {
-                ...this.state,
+                ...state,
                 project_task: action.payload
             }
 
@@ -30,6 +30,9 @@ export default function(state = initialState, action) {
                 ...state,
                 // TO_DO
             }
+
+        default:
+            return state;
     }
 
 }
