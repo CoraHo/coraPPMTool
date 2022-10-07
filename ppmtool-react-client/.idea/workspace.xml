@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="Design walk through and project tasks folder.">
-      <change afterPath="$PROJECT_DIR$/src/actions/backlogActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/ppmtool/src/main/java/io/coraho/ppmtool/services/ProjectTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/ppmtool/src/main/java/io/coraho/ppmtool/services/ProjectTaskService.java" afterDir="false" />
+    <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="AddProjectTask action">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/projectActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/projectActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/AddProjectTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/AddProjectTask.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +62,7 @@
       <workItem from="1664589461973" duration="1060000" />
       <workItem from="1665004602084" duration="292000" />
       <workItem from="1665081827678" duration="2109000" />
-      <workItem from="1665176600488" duration="488000" />
+      <workItem from="1665176600488" duration="1323000" />
     </task>
     <task id="LOCAL-00001" summary="Types and reducers for projectTasks.">
       <created>1663622920443</created>
@@ -90,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663641035853</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="AddProjectTask action">
+      <created>1665177388926</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665177388926</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +113,7 @@
     <MESSAGE value="Types and reducers for projectTasks." />
     <MESSAGE value="Design walk through and project tasks folder." />
     <MESSAGE value="Routes to ProjectBoard and ProjectTask" />
-    <option name="LAST_COMMIT_MESSAGE" value="Routes to ProjectBoard and ProjectTask" />
+    <MESSAGE value="AddProjectTask action" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddProjectTask action" />
   </component>
 </project>
