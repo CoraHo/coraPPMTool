@@ -25,6 +25,13 @@ class AddProjectTask extends Component {
         this.onSubmit = this.onSubmit.bind(this);
     }
 
+    // errors manipulation
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.errors) {
+            this.setState({errors: nextProps.errors});
+        }
+    }
+
     // onChange
     onChange(e) {
         this.setState({[e.target.name]: e.target.value})
@@ -46,7 +53,10 @@ class AddProjectTask extends Component {
     }
 
     render() {
+
         const {id} = this.props.match.params;
+        const {errors} = this.state;
+
         return (
             <div className="add-PBI">
                 <div className="container">
@@ -59,17 +69,23 @@ class AddProjectTask extends Component {
                             <p className="lead text-center">Project Name + Project Code</p>
                             <form onSubmit={this.onSubmit}>
                                 <div className="form-group">
-                                    <input type="text" className="form-control form-control-lg"
+                                    <input type="text"
+                                           className={classnames("form-control form-control-lg",
+                                               {"is-invalid": errors.summary}
+                                        )}
                                            name="summary"
                                            placeholder="Project Task summary"
-                                           value = {this.state.summary}
+                                           value={this.state.summary}
                                            onChange={this.onChange}
                                     />
+                                    {errors.summary && (
+                                        <div className="is-invalid">{errors.summary}</div>
+                                        )}
                                 </div>
                                 <div className="form-group">
                                     <textarea className="form-control form-control-lg" placeholder="Acceptance Criteria"
                                               name="acceptanceCriteria"
-                                              value = {this.state.acceptanceCriteria}
+                                              value={this.state.acceptanceCriteria}
                                               onChange={this.onChange}
                                     />
                                 </div>
@@ -77,14 +93,14 @@ class AddProjectTask extends Component {
                                 <div className="form-group">
                                     <input type="date" className="form-control form-control-lg"
                                            name="dueDate"
-                                           state = {this.state.dueDate}
+                                           state={this.state.dueDate}
                                            onChange={this.onChange}
                                     />
                                 </div>
                                 <div className="form-group">
                                     <select className="form-control form-control-lg"
                                             name="priority"
-                                            value = {this.state.priority}
+                                            value={this.state.priority}
                                             onChange={this.onChange}
                                     >
                                         <option value={0}>Select Priority</option>
@@ -97,7 +113,7 @@ class AddProjectTask extends Component {
                                 <div className="form-group">
                                     <select className="form-control form-control-lg"
                                             name="status"
-                                            value = {this.state.status}
+                                            value={this.state.status}
                                             onChange={this.onChange}
                                     >
                                         <option value="">Select Status</option>
@@ -118,7 +134,12 @@ class AddProjectTask extends Component {
 }
 
 AddProjectTask.propTypes = {
-  addProjectTask: propTypes.func.isRequired
+    addProjectTask: propTypes.func.isRequired,
+    errors: propTypes.object.isRequired
 };
 
-export default connect(null, {addProjectTask})(AddProjectTask);
+const mapStateToProps =state => ({
+    errors: state.errors
+});
+
+export default connect(mapStateToProps, {addProjectTask})(AddProjectTask);
