@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="Build relationship among ProjectTask.js, Backlog.js, and ProjectTask.js.">
+    <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="Load ProjectTask to state.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/backlogActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/backlogActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/Backlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/Backlog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectBoard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/ProjectTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/ProjectTask.js" afterDir="false" />
     </list>
@@ -35,20 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/cora/Desktop/PPMToolFullStackReact+java/ppmtool-react-client&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/cora/Desktop/PPMToolFullStackReact+java/ppmtool-react-client",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Node.js.react">
     <configuration name="react" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -84,7 +84,7 @@
       <workItem from="1665081827678" duration="2109000" />
       <workItem from="1665176600488" duration="6952000" />
       <workItem from="1665589777161" duration="1082000" />
-      <workItem from="1665591282407" duration="697000" />
+      <workItem from="1665591282407" duration="2714000" />
     </task>
     <task id="LOCAL-00001" summary="Types and reducers for projectTasks.">
       <created>1663622920443</created>
@@ -135,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665198812586</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Load ProjectTask to state.">
+      <created>1665592371480</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665592371480</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +167,7 @@
     <MESSAGE value="onChange and onSubmit on AddProjectTask.js" />
     <MESSAGE value="errors manipulation on AddProjectTask.js" />
     <MESSAGE value="Build relationship among ProjectTask.js, Backlog.js, and ProjectTask.js." />
-    <option name="LAST_COMMIT_MESSAGE" value="Build relationship among ProjectTask.js, Backlog.js, and ProjectTask.js." />
+    <MESSAGE value="Load ProjectTask to state." />
+    <option name="LAST_COMMIT_MESSAGE" value="Load ProjectTask to state." />
   </component>
 </project>
