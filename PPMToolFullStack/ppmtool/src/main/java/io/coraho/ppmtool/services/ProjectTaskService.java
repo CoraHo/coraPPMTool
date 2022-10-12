@@ -46,7 +46,7 @@ public class ProjectTaskService {
             }
 
             if (projectTask.getStatus() == null || projectTask.getStatus() == "") {
-                projectTask.setStatus("To_Do");
+                projectTask.setStatus("TO_DO");
             }
 
             return projectTaskRepository.save(projectTask);
