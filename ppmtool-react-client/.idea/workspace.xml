@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="project not found error and return the errors to board">
+    <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="update project task part1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/backlogActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/backlogActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/ProjectTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/ProjectTask.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/UpdateProjectTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/UpdateProjectTask.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +82,7 @@
       <workItem from="1665081827678" duration="2109000" />
       <workItem from="1665176600488" duration="6952000" />
       <workItem from="1665589777161" duration="1082000" />
-      <workItem from="1665591282407" duration="11963000" />
+      <workItem from="1665591282407" duration="13051000" />
     </task>
     <task id="LOCAL-00001" summary="Types and reducers for projectTasks.">
       <created>1663622920443</created>
@@ -164,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665608711074</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update project task part1">
+      <created>1665626700190</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665626700190</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +197,7 @@
     <MESSAGE value="Load ProjectTask to UI step1" />
     <MESSAGE value="Organize ProjectTask by status and priority" />
     <MESSAGE value="project not found error and return the errors to board" />
-    <option name="LAST_COMMIT_MESSAGE" value="project not found error and return the errors to board" />
+    <MESSAGE value="update project task part1" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project task part1" />
   </component>
 </project>
