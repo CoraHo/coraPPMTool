@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="update project task part2 - get state, onChange, and onSubmit">
+    <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="update project task part3 - update info and catch summary errors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/backlogActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/backlogActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/Backlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/Backlog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/UpdateProjectTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/UpdateProjectTask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/ProjectTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/ProjectTask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/backlogReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/backlogReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,21 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/cora/Desktop/PPMToolFullStackReact+java/ppmtool-react-client",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cora/Desktop/PPMToolFullStackReact+java/ppmtool-react-client&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Node.js.react">
     <configuration name="react" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -84,7 +84,8 @@
       <workItem from="1665081827678" duration="2109000" />
       <workItem from="1665176600488" duration="6952000" />
       <workItem from="1665589777161" duration="1082000" />
-      <workItem from="1665591282407" duration="14545000" />
+      <workItem from="1665591282407" duration="14608000" />
+      <workItem from="1665673574617" duration="1301000" />
     </task>
     <task id="LOCAL-00001" summary="Types and reducers for projectTasks.">
       <created>1663622920443</created>
@@ -177,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665629190068</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update project task part3 - update info and catch summary errors">
+      <created>1665632436284</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665632436284</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +216,7 @@
     <MESSAGE value="project not found error and return the errors to board" />
     <MESSAGE value="update project task part1" />
     <MESSAGE value="update project task part2 - get state, onChange, and onSubmit" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project task part2 - get state, onChange, and onSubmit" />
+    <MESSAGE value="update project task part3 - update info and catch summary errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project task part3 - update info and catch summary errors" />
   </component>
 </project>
