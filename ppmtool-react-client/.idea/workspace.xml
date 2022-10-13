@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="project not found error and return the errors to board">
-      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/ppmtool/src/main/java/io/coraho/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/ppmtool/src/main/java/io/coraho/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/backlogActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/backlogActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/ProjectTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/ProjectTask.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/UpdateProjectTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/UpdateProjectTask.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +85,7 @@
       <workItem from="1665081827678" duration="2109000" />
       <workItem from="1665176600488" duration="6952000" />
       <workItem from="1665589777161" duration="1082000" />
-      <workItem from="1665591282407" duration="8795000" />
+      <workItem from="1665591282407" duration="11963000" />
     </task>
     <task id="LOCAL-00001" summary="Types and reducers for projectTasks.">
       <created>1663622920443</created>
