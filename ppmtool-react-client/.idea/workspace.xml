@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="update project task part3 - update info and catch summary errors">
+    <list default="true" id="6bd0c17f-cc18-4a39-bdd3-587ad07d212e" name="Changes" comment="delete project task">
+      <change afterPath="$PROJECT_DIR$/../PPMToolFullStack/ppmtool/src/main/java/io/coraho/ppmtool/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPMToolFullStack/ppmtool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PPMToolFullStack/ppmtool/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/backlogActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/backlogActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/ProjectTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectBoard/ProjectTasks/ProjectTask.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/backlogReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/backlogReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,8 @@
       <workItem from="1665176600488" duration="6952000" />
       <workItem from="1665589777161" duration="1082000" />
       <workItem from="1665591282407" duration="14608000" />
-      <workItem from="1665673574617" duration="1301000" />
+      <workItem from="1665673574617" duration="1778000" />
+      <workItem from="1668710940875" duration="2723000" />
     </task>
     <task id="LOCAL-00001" summary="Types and reducers for projectTasks.">
       <created>1663622920443</created>
@@ -185,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665632436284</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="delete project task">
+      <created>1665677136448</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665677136449</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +224,7 @@
     <MESSAGE value="update project task part1" />
     <MESSAGE value="update project task part2 - get state, onChange, and onSubmit" />
     <MESSAGE value="update project task part3 - update info and catch summary errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project task part3 - update info and catch summary errors" />
+    <MESSAGE value="delete project task" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete project task" />
   </component>
 </project>
